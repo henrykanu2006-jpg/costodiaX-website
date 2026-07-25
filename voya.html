@@ -248,7 +248,7 @@ input,select,textarea{box-sizing:border-box;}
       <h2 class="h2" style="text-align:center;margin-bottom:16px;">Start your free trial today.</h2>
       <p class="lead" style="text-align:center;">Tell us about your company and we will set up your Voya account within 24 hours.</p>
     </div>
-    <div class="reveal d1" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:48px 44px;">
+    <form action="https://formspree.io/f/xnjeodoj" method="POST" class="reveal d1" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:48px 44px;">
       <div class="form-row" style="margin-bottom:16px;">
         <div><label class="form-label">Company name</label><input type="text" class="form-input" placeholder="Your company name"/></div>
         <div><label class="form-label">Your name</label><input type="text" class="form-input" placeholder="Full name"/></div>
@@ -271,7 +271,9 @@ input,select,textarea{box-sizing:border-box;}
         <label class="form-label">Tell us about your business</label>
         <textarea class="form-textarea" style="min-height:110px;" placeholder="How many jobs per month? Do you have a bonded terminal? How many staff?"></textarea>
       </div>
-      <button class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;font-size:15px;">
+      <input type="hidden" name="_subject" value="New Voya Platform Request"/>
+      <input type="hidden" name="_next" value="https://costodiax.com/voya.html"/>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;font-size:15px;">
         Request access to Voya
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
