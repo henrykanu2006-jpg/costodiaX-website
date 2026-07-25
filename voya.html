@@ -250,16 +250,16 @@ input,select,textarea{box-sizing:border-box;}
     </div>
     <form action="https://formspree.io/f/xnjeodoj" method="POST" class="reveal d1" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:48px 44px;">
       <div class="form-row" style="margin-bottom:16px;">
-        <div><label class="form-label">Company name</label><input type="text" class="form-input" placeholder="Your company name"/></div>
-        <div><label class="form-label">Your name</label><input type="text" class="form-input" placeholder="Full name"/></div>
+        <div><label class="form-label">Company name</label><input type="text" class="form-input" name="company" name="company" placeholder="Your company name"/></div>
+        <div><label class="form-label">Your name</label><input type="text" class="form-input" name="name" name="name" placeholder="Full name"/></div>
       </div>
       <div class="form-row" style="margin-bottom:16px;">
-        <div><label class="form-label">Email</label><input type="email" class="form-input" placeholder="you@company.com"/></div>
-        <div><label class="form-label">Phone</label><input type="tel" class="form-input" placeholder="080xxxxxxxx"/></div>
+        <div><label class="form-label">Email</label><input type="email" class="form-input" name="email" name="email" placeholder="you@company.com"/></div>
+        <div><label class="form-label">Phone</label><input type="tel" class="form-input" name="phone" name="phone" placeholder="080xxxxxxxx"/></div>
       </div>
       <div style="margin-bottom:16px;">
         <label class="form-label">Which plan interests you?</label>
-        <select class="form-select form-input">
+        <select name="plan" class="form-select form-input">
           <option value="">Select a plan</option>
           <option>Starter — ₦45,000/month</option>
           <option>Growth — ₦95,000/month</option>
@@ -269,7 +269,7 @@ input,select,textarea{box-sizing:border-box;}
       </div>
       <div style="margin-bottom:24px;">
         <label class="form-label">Tell us about your business</label>
-        <textarea class="form-textarea" style="min-height:110px;" placeholder="How many jobs per month? Do you have a bonded terminal? How many staff?"></textarea>
+        <textarea class="form-textarea" style="min-height:110px;" name="message" name="message" placeholder="How many jobs per month? Do you have a bonded terminal? How many staff?"></textarea>
       </div>
       <input type="hidden" name="_subject" value="New Voya Platform Request"/>
       <input type="hidden" name="_next" value="https://costodiax.com/voya.html"/>
