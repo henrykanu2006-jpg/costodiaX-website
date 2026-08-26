@@ -1,14 +1,21 @@
 # CostodiaX Website
 
-A modern website for CostodiaX.
-
-Built with Claude AI.
+The marketing site for CostodiaX Group, built with Next.js, TypeScript and Tailwind CSS.
 
 ## Pages
-- Home (`index.html`)
-- Services
-- Yoga
-- Contact
+- Home (`/`)
+- Services (`/services`)
+- Voya Platform (`/voya`)
+- About (`/about`)
+- Contact (`/contact`)
+- Privacy Policy (`/privacy`)
 
-## Live Demo
-(Will be added after deployment)
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Live Site
+https://www.costodiax.com
