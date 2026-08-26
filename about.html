@@ -81,8 +81,10 @@ nav.scrolled{background:rgba(5,10,18,0.97);backdrop-filter:blur(20px);border-bot
 .back-top{position:fixed;bottom:96px;right:28px;z-index:998;width:44px;height:44px;background:var(--card);border:1px solid var(--border);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;text-decoration:none;}
 .back-top.show{display:flex;}
 .back-top:hover{background:var(--orange);border-color:var(--orange);}
-@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}.footer-bottom{flex-direction:column;gap:12px;text-align:center;}}
-@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
+@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}.footer-bottom{flex-direction:column;gap:12px;text-align:center;}.grid-2{grid-template-columns:1fr!important;gap:40px!important;}.grid-3{grid-template-columns:1fr 1fr!important;}}
+@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr!important;}}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 </style>
 </head>
 <body>
@@ -124,7 +126,7 @@ nav.scrolled{background:rgba(5,10,18,0.97);backdrop-filter:blur(20px);border-bot
 
 <!-- FOUNDER STORY -->
 <section class="section">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+  <div class="grid-2">
     <div class="reveal">
       <div class="label">The Founder</div>
       <h2 class="h2" style="margin-bottom:16px;">Started at 19.<br/>Built to last.</h2>
@@ -155,7 +157,7 @@ nav.scrolled{background:rgba(5,10,18,0.97);backdrop-filter:blur(20px);border-bot
     <h2 class="h2" style="text-align:center;margin-bottom:16px;">Mission & Vision</h2>
     <div class="divider" style="margin:20px auto 36px;"></div>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:0 auto;">
+  <div class="grid-2" style="gap:20px;max-width:900px;margin:0 auto;">
     <div class="reveal d1" style="background:var(--black);border:1px solid var(--border);border-radius:14px;padding:44px 40px;position:relative;overflow:hidden;">
       <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange);"></div>
       <div style="font-size:11px;font-weight:700;color:var(--orange);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:20px;">Our Mission</div>
@@ -178,7 +180,7 @@ nav.scrolled{background:rgba(5,10,18,0.97);backdrop-filter:blur(20px);border-bot
     <h2 class="h2" style="margin-bottom:16px;">Our Values</h2>
     <div class="divider"></div>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+  <div class="grid-3">
     <div class="reveal d1" style="background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:36px 30px;transition:all 0.3s;" onmouseenter="this.style.borderColor='rgba(234,88,12,0.25)';this.style.transform='translateY(-4px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform=''"><div style="font-family:Playfair Display,serif;font-size:56px;color:var(--orange);opacity:0.12;line-height:1;margin-bottom:16px;font-weight:700;">01</div><h3 style="font-size:17px;font-weight:600;color:var(--white);margin-bottom:12px;">Transparency</h3><p style="font-size:13.5px;color:var(--text3);line-height:1.72;">Every fee documented. Every charge explained. Clients see exactly what they are paying for — before they pay it.</p></div><div class="reveal d2" style="background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:36px 30px;transition:all 0.3s;" onmouseenter="this.style.borderColor='rgba(234,88,12,0.25)';this.style.transform='translateY(-4px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform=''"><div style="font-family:Playfair Display,serif;font-size:56px;color:var(--orange);opacity:0.12;line-height:1;margin-bottom:16px;font-weight:700;">02</div><h3 style="font-size:17px;font-weight:600;color:var(--white);margin-bottom:12px;">Technology First</h3><p style="font-size:13.5px;color:var(--text3);line-height:1.72;">We do not adapt old processes to software. We rebuild processes from the ground up with technology at the centre.</p></div><div class="reveal d3" style="background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:36px 30px;transition:all 0.3s;" onmouseenter="this.style.borderColor='rgba(234,88,12,0.25)';this.style.transform='translateY(-4px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform=''"><div style="font-family:Playfair Display,serif;font-size:56px;color:var(--orange);opacity:0.12;line-height:1;margin-bottom:16px;font-weight:700;">03</div><h3 style="font-size:17px;font-weight:600;color:var(--white);margin-bottom:12px;">Nigerian by Design</h3><p style="font-size:13.5px;color:var(--text3);line-height:1.72;">Voya is not a foreign platform adapted for Nigeria. It is built from scratch for Nigerian customs procedures, Nigerian ports, and Nigerian businesses.</p></div><div class="reveal d1" style="background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:36px 30px;transition:all 0.3s;" onmouseenter="this.style.borderColor='rgba(234,88,12,0.25)';this.style.transform='translateY(-4px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform=''"><div style="font-family:Playfair Display,serif;font-size:56px;color:var(--orange);opacity:0.12;line-height:1;margin-bottom:16px;font-weight:700;">04</div><h3 style="font-size:17px;font-weight:600;color:var(--white);margin-bottom:12px;">Speed</h3><p style="font-size:13.5px;color:var(--text3);line-height:1.72;">Time is money in logistics. We move fast, respond fast, and build systems that help our clients move fast too.</p></div><div class="reveal d2" style="background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:36px 30px;transition:all 0.3s;" onmouseenter="this.style.borderColor='rgba(234,88,12,0.25)';this.style.transform='translateY(-4px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform=''"><div style="font-family:Playfair Display,serif;font-size:56px;color:var(--orange);opacity:0.12;line-height:1;margin-bottom:16px;font-weight:700;">05</div><h3 style="font-size:17px;font-weight:600;color:var(--white);margin-bottom:12px;">Reliability</h3><p style="font-size:13.5px;color:var(--text3);line-height:1.72;">When cargo is at the port, there is no room for mistakes. Our clients trust us because we deliver — consistently.</p></div><div class="reveal d3" style="background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:36px 30px;transition:all 0.3s;" onmouseenter="this.style.borderColor='rgba(234,88,12,0.25)';this.style.transform='translateY(-4px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform=''"><div style="font-family:Playfair Display,serif;font-size:56px;color:var(--orange);opacity:0.12;line-height:1;margin-bottom:16px;font-weight:700;">06</div><h3 style="font-size:17px;font-weight:600;color:var(--white);margin-bottom:12px;">Growth</h3><p style="font-size:13.5px;color:var(--text3);line-height:1.72;">We are building something that lasts. Every client we serve, every company we onboard onto Voya, is a step toward making African trade more efficient.</p></div>
   </div>
 </section>

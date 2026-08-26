@@ -61,6 +61,9 @@ nav.scrolled{background:rgba(5,10,18,0.97);backdrop-filter:blur(20px);border-bot
 .d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}.d3{transition-delay:0.3s;}
 @media(max-width:900px){.nav-links li:not(:last-child){display:none;}.services-grid{grid-template-columns:1fr 1fr!important;}.why-grid{grid-template-columns:1fr!important;}.qm-section{grid-template-columns:1fr!important;}.qm-img{height:280px!important;}}
 @media(max-width:600px){.services-grid{grid-template-columns:1fr!important;}}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px;}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}}
+@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
 
 /* MOBILE MENU */
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
@@ -233,7 +236,7 @@ a.contact-link:hover{color:var(--orange);}
 
 <!-- VOYA TEASER -->
 <section class="section section-dark">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+  <div class="why-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
     <div class="reveal">
       <div class="label">Voya Platform — Powered by CostodiaX</div>
       <h2 class="h2" style="margin-bottom:16px;">The software running<br/>modern logistics<br/>in <em style="color:var(--orange);font-style:normal;">Africa.</em></h2>
@@ -285,7 +288,7 @@ a.contact-link:hover{color:var(--orange);}
 
 <!-- FOOTER -->
 <footer style="background:#030508;border-top:1px solid var(--border);padding:70px 6% 36px;">
-  <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px;">
+  <div class="footer-grid">
     <div>
       <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:14px;">COSTODIA<span style="color:var(--orange);">X</span> Group</div>
       <p style="font-size:13.5px;color:var(--text2);line-height:1.7;max-width:240px;margin-bottom:16px;">Nigeria's premier logistics conglomerate — customs clearing, bonded terminal in Port Harcourt, haulage and the Voya platform.</p>
