@@ -8,6 +8,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/voya", label: "Voya Platform" },
+  { href: "/track", label: "Track Shipment" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
