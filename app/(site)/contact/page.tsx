@@ -25,8 +25,8 @@ const details = [
   },
   {
     label: "Email",
-    value: "admin@costodiax.com",
-    href: "mailto:admin@costodiax.com",
+    value: "contact@costodiax.com",
+    href: "mailto:contact@costodiax.com",
     icon: (
       <>
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />

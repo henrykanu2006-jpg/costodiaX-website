@@ -83,7 +83,7 @@ export default function Footer() {
         <div>
           <h4 className="text-[11px] font-bold text-white tracking-wider uppercase mb-5">Contact</h4>
           <a href="tel:+2348167117297" className="contact-link block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">0816 711 7297</a>
-          <a href="mailto:admin@costodiax.com" className="contact-link block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">admin@costodiax.com</a>
+          <a href="mailto:contact@costodiax.com" className="contact-link block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">contact@costodiax.com</a>
           <div className="text-[13.5px] text-text-3 mb-3">11 East West Road, Akpajo, Rivers State</div>
           <div className="text-[13.5px] text-text-3 mb-3">Bonded Terminal, Port Harcourt</div>
         </div>
