@@ -37,6 +37,7 @@ const moreServices = [
     title: "Haulage & Transport",
     desc: "Cargo movement from port gate to warehouse across Nigeria, coordinated through trusted third-party transport partners. Every trip tracked live.",
     points: ["20ft & 40ft containers", "Real-time tracking via Voya", "Proof of delivery"],
+    href: "/services/haulage-transport",
     icon: (
       <>
         <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z" />
@@ -47,8 +48,9 @@ const moreServices = [
   },
   {
     title: "Freight Forwarding",
-    desc: "International cargo coordination by sea and air — from any origin to any Nigerian port with full documentation and real-time visibility.",
-    points: ["Sea and air freight", "Origin to destination", "Full documentation"],
+    desc: "International cargo coordination by sea and air — from any origin into Onne Port, with full documentation and real-time visibility.",
+    points: ["Sea and air freight", "Origin to Onne Port", "Full documentation"],
+    href: "/services/freight-forwarding",
     icon: (
       <>
         <circle cx="12" cy="12" r="10" />
@@ -61,6 +63,7 @@ const moreServices = [
     title: "Import Documentation",
     desc: "Complete handling of every document required by Nigerian Customs — Form M, PAAR, Bill of Lading, Combined Certificate and more.",
     points: ["Form M & PAAR", "HS code advice", "Duty consultancy"],
+    href: "/services/customs-clearance",
     icon: (
       <>
         <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
@@ -99,7 +102,10 @@ export default function ServicesPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/quote" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-orange text-white hover:bg-orange-2">Get a quote</Link>
+            <div className="flex gap-3.5 flex-wrap">
+              <Link href="/quote" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-orange text-white hover:bg-orange-2">Get a quote</Link>
+              <Link href="/services/customs-clearance" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20">Learn more</Link>
+            </div>
           </Reveal>
           <Reveal delay="d2">
             <div className="bg-dark border border-border rounded-2xl p-10">
@@ -126,8 +132,8 @@ export default function ServicesPage() {
           <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-5">Secure bonded storage<br />in <span className="text-gold">Port Harcourt.</span></h2>
           <p className="text-base text-[rgba(226,232,240,0.8)] leading-[1.75] mb-8">Our licensed bonded terminal in Port Harcourt provides secure storage for imported goods awaiting customs clearance. Daily storage charges tracked automatically through Voya — full visibility, no surprises.</p>
           <div className="flex gap-3.5 flex-wrap">
-            <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-gold text-[#0A0A0A]">Enquire about storage</Link>
-            <Link href="/voya" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20">See how Voya tracks terminal</Link>
+            <Link href="/services/port-terminal" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-gold text-[#0A0A0A]">Learn more</Link>
+            <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20">Enquire about storage</Link>
           </div>
         </Reveal>
       </div>
@@ -147,11 +153,12 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-base font-semibold text-white mb-2.5">{s.title}</h3>
                 <p className="text-[13.5px] text-text-3 leading-[1.7] mb-4">{s.desc}</p>
-                <ul className="flex flex-col gap-2 list-none">
+                <ul className="flex flex-col gap-2 list-none mb-5">
                   {s.points.map((p) => (
                     <li key={p} className="text-[13px] text-text-3 flex gap-2"><span className="text-orange">✓</span>{p}</li>
                   ))}
                 </ul>
+                <Link href={s.href} className="text-xs font-semibold text-orange no-underline inline-flex items-center gap-1.5">Learn more →</Link>
               </div>
             </Reveal>
           ))}

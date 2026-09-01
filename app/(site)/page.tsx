@@ -24,13 +24,13 @@ const services = [
   {
     title: "Customs Clearing",
     desc: "Fast, accurate customs documentation through our operating base at Onne Port, Rivers State.",
-    href: "/services",
+    href: "/services/customs-clearance",
     icon: <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />,
   },
   {
     title: "Bonded Terminal",
     desc: "Licensed bonded storage in Port Harcourt with automated daily billing through Voya.",
-    href: "/services",
+    href: "/services/port-terminal",
     icon: (
       <>
         <rect x="2" y="7" width="20" height="14" rx="2" />
@@ -41,7 +41,7 @@ const services = [
   {
     title: "Haulage & Transport",
     desc: "Cargo movement from port to warehouse across Nigeria, coordinated through trusted third-party transport partners, tracked live.",
-    href: "/services",
+    href: "/services/haulage-transport",
     icon: (
       <>
         <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z" />
@@ -53,7 +53,7 @@ const services = [
   {
     title: "Import Documentation",
     desc: "Complete Form M, PAAR, Bill of Lading and NCS documentation handled accurately.",
-    href: "/services",
+    href: "/services/customs-clearance",
     icon: (
       <>
         <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
@@ -64,7 +64,7 @@ const services = [
   {
     title: "Freight Forwarding",
     desc: "International cargo coordination by sea and air from any origin into Onne Port.",
-    href: "/services",
+    href: "/services/freight-forwarding",
     icon: (
       <>
         <circle cx="12" cy="12" r="10" />

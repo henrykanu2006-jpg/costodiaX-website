@@ -6,6 +6,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${BASE_URL}/`, changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE_URL}/services`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/services/customs-clearance`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/services/freight-forwarding`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/services/haulage-transport`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/services/port-terminal`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/voya`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/track`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/quote`, changeFrequency: "monthly", priority: 0.9 },
