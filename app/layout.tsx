@@ -1,6 +1,29 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "CostodiaX Group",
+  url: "https://www.costodiax.com",
+  logo: "https://www.costodiax.com/favicon.ico",
+  telephone: "+2348161172972",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "11 East West Road, Akpajo",
+    addressRegion: "Rivers State",
+    addressCountry: "NG",
+  },
+  areaServed: "NG",
+  sameAs: [
+    "https://www.instagram.com/costodia_x/",
+    "https://www.tiktok.com/@costodiax4",
+    "https://www.linkedin.com/company/costodia-x",
+    "https://www.facebook.com/costodia_x",
+  ],
+};
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -29,7 +52,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="font-sans leading-relaxed">{children}</body>
+      <body className="font-sans leading-relaxed">
+        {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <Analytics />
+      </body>
     </html>
   );
 }

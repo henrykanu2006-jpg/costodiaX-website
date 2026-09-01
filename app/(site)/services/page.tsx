@@ -99,7 +99,7 @@ export default function ServicesPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-orange text-white hover:bg-orange-2">Get a quote</Link>
+            <Link href="/quote" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-orange text-white hover:bg-orange-2">Get a quote</Link>
           </Reveal>
           <Reveal delay="d2">
             <div className="bg-dark border border-border rounded-2xl p-10">

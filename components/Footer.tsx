@@ -72,6 +72,7 @@ export default function Footer() {
           <Link href="/services" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Services</Link>
           <Link href="/about" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">About Us</Link>
           <Link href="/contact" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Contact</Link>
+          <Link href="/faq" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">FAQ</Link>
         </div>
         <div>
           <h4 className="text-[11px] font-bold text-white tracking-wider uppercase mb-5">Voya Platform</h4>
@@ -82,7 +83,7 @@ export default function Footer() {
         </div>
         <div>
           <h4 className="text-[11px] font-bold text-white tracking-wider uppercase mb-5">Contact</h4>
-          <a href="tel:+2348167117297" className="contact-link block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">0816 711 7297</a>
+          <a href="tel:+2348161172972" className="contact-link block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">0816 117 2972</a>
           <a href="mailto:contact@costodiax.com" className="contact-link block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">contact@costodiax.com</a>
           <div className="text-[13.5px] text-text-3 mb-3">11 East West Road, Akpajo, Rivers State</div>
           <div className="text-[13.5px] text-text-3 mb-3">Bonded Terminal, Port Harcourt</div>

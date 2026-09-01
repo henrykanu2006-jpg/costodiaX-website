@@ -79,7 +79,7 @@ export default function PrivacyPage() {
         <p className="text-[15px] text-text-2 leading-[1.8] mb-4">If you have any questions about this Privacy Policy or how we handle your data, please contact us:</p>
         <ul className="pl-5 mb-4 list-disc">
           <li className="text-[15px] text-text-2 leading-[1.8] mb-2"><strong className="text-white">Email:</strong> <a href="mailto:contact@costodiax.com" className="text-orange no-underline hover:underline">contact@costodiax.com</a></li>
-          <li className="text-[15px] text-text-2 leading-[1.8] mb-2"><strong className="text-white">Phone:</strong> <a href="tel:+2348167117297" className="text-orange no-underline hover:underline">0816 711 7297</a></li>
+          <li className="text-[15px] text-text-2 leading-[1.8] mb-2"><strong className="text-white">Phone:</strong> <a href="tel:+2348161172972" className="text-orange no-underline hover:underline">0816 117 2972</a></li>
           <li className="text-[15px] text-text-2 leading-[1.8] mb-2"><strong className="text-white">Address:</strong> 11 East West Road, Akpajo, Rivers State, Nigeria</li>
         </ul>
       </div>

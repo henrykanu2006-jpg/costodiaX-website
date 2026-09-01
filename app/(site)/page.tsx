@@ -93,6 +93,55 @@ const whyPoints = [
   "Backed by the Voya platform for full operational control",
 ];
 
+const trustPoints = [
+  {
+    title: "Full shipment visibility",
+    desc: "Every job gets a tracking number you can check anytime on our Track Shipment page — no chasing us for updates.",
+    icon: (
+      <>
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </>
+    ),
+  },
+  {
+    title: "Licensed bonded terminal",
+    desc: "Our bonded storage facility in Port Harcourt is a licensed operation, not an informal arrangement.",
+    icon: (
+      <>
+        <rect x="3" y="11" width="18" height="10" rx="2" />
+        <path d="M7 11V7a5 5 0 0110 0v4" />
+      </>
+    ),
+  },
+  {
+    title: "You reach a real person",
+    desc: "Phone, WhatsApp and email all go to our actual Nigerian team — not a call centre or a chatbot.",
+    icon: (
+      <>
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.9 1.18 2 2 0 012.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+      </>
+    ),
+  },
+  {
+    title: "Registered Nigerian company",
+    desc: "CostodiaX Group is a registered company operating from Port Harcourt, Rivers State.",
+    icon: (
+      <>
+        <path d="M9 11l3 3L22 4" />
+        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+      </>
+    ),
+  },
+];
+
+const faqPreview = [
+  { q: "What ports do you operate at?", a: "Our operating base is Onne Port, Rivers State, alongside our licensed bonded terminal in Port Harcourt." },
+  { q: "Can I track my shipment?", a: "Yes — once your shipment is in our system, check its status anytime on our Track Shipment page." },
+  { q: "How do I request a quote?", a: "Use our Request a Quote form with your cargo details, and we'll get back to you directly." },
+  { q: "Do you handle container haulage?", a: "Yes, coordinated through trusted third-party transport partners, with every trip tracked." },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -127,7 +176,7 @@ export default function HomePage() {
             <Link href="/voya" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 transition-all bg-transparent text-white border border-white/20 hover:border-white hover:-translate-y-0.5">
               Voya Platform
             </Link>
-            <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline inline-flex items-center gap-2 transition-all bg-gold text-[#0A0A0A] hover:bg-[#D97706] hover:-translate-y-0.5">
+            <Link href="/quote" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline inline-flex items-center gap-2 transition-all bg-gold text-[#0A0A0A] hover:bg-[#D97706] hover:-translate-y-0.5">
               Get a quote
             </Link>
           </div>
@@ -206,6 +255,30 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* TRUST */}
+      <section className="px-[6%] py-[100px]">
+        <Reveal className="!block text-center max-w-[640px] mx-auto mb-14">
+          <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Why trust us</div>
+          <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">A young company,<br />built to last.</h2>
+          <p className="text-[17px] text-text-2 leading-[1.78]">CostodiaX is new — registered in June 2026. We don&apos;t claim decades of history. What we do have is a licensed operation, real technology, and a team that answers the phone.</p>
+        </Reveal>
+        <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-5 max-w-[900px] mx-auto">
+          {trustPoints.map((t, i) => (
+            <Reveal key={t.title} delay={(["d1", "d2", "d3", "d4"] as const)[i % 4]}>
+              <div className="flex gap-4 items-start bg-card border border-border rounded-xl p-6 h-full">
+                <div className="w-11 h-11 rounded-lg bg-orange/10 border border-orange/20 flex items-center justify-center shrink-0">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#EA580C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">{t.icon}</svg>
+                </div>
+                <div>
+                  <div className="text-[15px] font-semibold text-white mb-1.5">{t.title}</div>
+                  <div className="text-[13.5px] text-text-3 leading-relaxed">{t.desc}</div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       {/* VOYA TEASER */}
       <section className="px-[6%] py-[100px] bg-dark border-t border-b border-border">
         <div className="grid grid-cols-2 max-[900px]:grid-cols-1 gap-20 items-center">
@@ -269,6 +342,27 @@ export default function HomePage() {
               </div>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* FAQ PREVIEW */}
+      <section className="px-[6%] py-[100px] bg-dark border-t border-b border-border">
+        <Reveal className="!block text-center max-w-[600px] mx-auto mb-12">
+          <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">FAQ</div>
+          <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1]">Quick answers.</h2>
+        </Reveal>
+        <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-5 max-w-[900px] mx-auto mb-10">
+          {faqPreview.map((f, i) => (
+            <Reveal key={f.q} delay={(["d1", "d2", "d3", "d4"] as const)[i % 4]}>
+              <div className="bg-card border border-border rounded-xl p-6 h-full">
+                <div className="text-[15px] font-semibold text-white mb-2">{f.q}</div>
+                <div className="text-[13.5px] text-text-3 leading-relaxed">{f.a}</div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <div className="text-center">
+          <Link href="/faq" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20 hover:border-white">See all FAQs</Link>
         </div>
       </section>
 
