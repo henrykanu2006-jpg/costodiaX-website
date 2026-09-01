@@ -181,7 +181,7 @@ export default function ContactPage() {
         <h2 className="font-serif text-[clamp(28px,4vw,50px)] text-white font-bold max-w-[680px] mx-auto mb-4 leading-[1.15] tracking-[-0.025em]">Running a logistics company?<br />Try Voya Platform.</h2>
         <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Join Nigerian logistics companies managing their jobs, invoices, terminal and transport on Voya — starting at ₦45,000/month.</p>
         <div className="flex gap-4 justify-center flex-wrap relative z-[2]">
-          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Start free trial</Link>
+          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Request early access</Link>
           <Link href="/voya#pricing" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">See pricing</Link>
         </div>
       </div>

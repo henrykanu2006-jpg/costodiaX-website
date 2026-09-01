@@ -75,10 +75,10 @@ export default function VoyaPage() {
           <Reveal>
             <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Voya Platform — Powered by CostodiaX</div>
             <h1 className="font-serif text-[clamp(40px,6vw,80px)] font-bold text-white tracking-[-0.03em] leading-[1.06] max-w-[780px] mb-5">The operating system<br />for African logistics.</h1>
-            <p className="text-[17px] text-text-2 leading-[1.78] max-w-[600px] mb-10">Voya is a complete SaaS platform built specifically for clearing agents, freight forwarders and logistics companies in Nigeria. One subscription. Everything you need to run a modern, professional operation.</p>
+            <p className="text-[17px] text-text-2 leading-[1.78] max-w-[600px] mb-10">Voya is a SaaS platform being built specifically for clearing agents, freight forwarders and logistics companies in Nigeria — everything you need to run a modern, professional operation, in one place.</p>
             <div className="flex gap-3.5 flex-wrap">
               <a href="#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 bg-orange text-white hover:bg-orange-2">
-                Start free trial
+                Request early access
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </a>
               <a href="#pricing" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20">See pricing</a>
@@ -182,7 +182,7 @@ export default function VoyaPage() {
         <Reveal className="!block text-center mb-14">
           <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Pricing</div>
           <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Honest pricing.<br />No hidden fees.</h2>
-          <p className="text-[17px] text-text-2 leading-[1.78] max-w-[480px] mx-auto">All plans include core modules. Cancel any time. Annual plans available at a discount.</p>
+          <p className="text-[17px] text-text-2 leading-[1.78] max-w-[480px] mx-auto">Planned launch pricing — all plans include core modules. Get in touch to be among the first onboarded.</p>
         </Reveal>
         <div className="grid grid-cols-3 max-[960px]:grid-cols-1 gap-4 max-w-[960px] mx-auto">
           {plans.map((plan) => (
@@ -213,7 +213,7 @@ export default function VoyaPage() {
                     : { background: "transparent", color: plan.color, border: `1px solid ${plan.color}` }
                 }
               >
-                Get started
+                Talk to sales
               </a>
             </div>
           ))}
@@ -224,8 +224,8 @@ export default function VoyaPage() {
         <div className="max-w-[640px] mx-auto">
           <Reveal className="!block text-center mb-12">
             <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Get started</div>
-            <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Start your free trial today.</h2>
-            <p className="text-[17px] text-text-2 leading-[1.78]">Tell us about your company and we will set up your Voya account within 24 hours.</p>
+            <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Get in touch about Voya.</h2>
+            <p className="text-[17px] text-text-2 leading-[1.78]">Tell us about your company and our team will reach out to discuss getting you onboarded.</p>
           </Reveal>
           <Reveal delay="d1">
             <form action="https://formspree.io/f/xnjeodoj" method="POST" className="bg-card border border-border rounded-2xl p-11">
@@ -269,7 +269,7 @@ export default function VoyaPage() {
                 Request access to Voya
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </button>
-              <p className="text-center text-[12.5px] text-text-3 mt-4">We contact you within 24 hours to set up your company account.</p>
+              <p className="text-center text-[12.5px] text-text-3 mt-4">Our team will reach out to discuss next steps.</p>
             </form>
           </Reveal>
         </div>

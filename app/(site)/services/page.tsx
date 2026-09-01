@@ -19,11 +19,8 @@ export const metadata: Metadata = {
 };
 
 const ports = [
-  { name: "Onne Port", note: "Rivers State — our primary operating base" },
-  { name: "Apapa Port", note: "Lagos — Nigeria's largest container terminal" },
-  { name: "Tin Can Island", note: "Lagos — multipurpose terminal" },
-  { name: "Calabar Port", note: "Cross River State" },
-  { name: "Warri Port", note: "Delta State" },
+  { name: "Onne Port", note: "Rivers State — our primary operating base, daily operations" },
+  { name: "Bonded Terminal", note: "Port Harcourt, Rivers State — licensed bonded storage" },
 ];
 
 const clearingChecklist = [
@@ -38,7 +35,7 @@ const clearingChecklist = [
 const moreServices = [
   {
     title: "Haulage & Transport",
-    desc: "Cargo movement from port gate to warehouse across Nigeria. Own fleet and trusted third-party partners. Every trip tracked live.",
+    desc: "Cargo movement from port gate to warehouse across Nigeria, coordinated through trusted third-party transport partners. Every trip tracked live.",
     points: ["20ft & 40ft containers", "Real-time tracking via Voya", "Proof of delivery"],
     icon: (
       <>
@@ -92,8 +89,8 @@ export default function ServicesPage() {
         <div className="grid grid-cols-2 max-[960px]:grid-cols-1 gap-[72px] max-[960px]:gap-10 items-center">
           <Reveal>
             <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">01 — Customs Clearing</div>
-            <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Fast, accurate clearance at every Nigerian port.</h2>
-            <p className="text-[17px] text-text-2 leading-[1.78] mb-7">Our team processes customs documentation and duty payments at all major ports — Onne, Apapa, Tin Can Island, Calabar and Warri.</p>
+            <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Fast, accurate clearance from our Onne Port base.</h2>
+            <p className="text-[17px] text-text-2 leading-[1.78] mb-7">Our team processes customs documentation and duty payments through our operating base at Onne Port, Rivers State — with a licensed bonded terminal for secure storage right in Port Harcourt.</p>
             <ul className="flex flex-col gap-3 mb-9 list-none">
               {clearingChecklist.map((c) => (
                 <li key={c} className="flex gap-3 items-start">
@@ -106,7 +103,7 @@ export default function ServicesPage() {
           </Reveal>
           <Reveal delay="d2">
             <div className="bg-dark border border-border rounded-2xl p-10">
-              <div className="text-xs font-bold text-text-3 tracking-wider uppercase mb-7">Ports We Operate At</div>
+              <div className="text-xs font-bold text-text-3 tracking-wider uppercase mb-7">Where We Operate</div>
               {ports.map((p) => (
                 <div key={p.name} className="flex items-center gap-4 py-4 border-b border-border last:border-none">
                   <div className="w-2.5 h-2.5 rounded-full bg-orange shrink-0" />
@@ -166,7 +163,7 @@ export default function ServicesPage() {
         <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Contact our operations team. We will respond within 24 hours with a clear quote.</p>
         <div className="flex gap-4 justify-center flex-wrap relative z-[2]">
           <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Contact our team</Link>
-          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Sign up for Voya</Link>
+          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
         </div>
       </div>
 

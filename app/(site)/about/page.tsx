@@ -138,7 +138,7 @@ export default function AboutPage() {
         <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Whether you need cargo cleared, goods stored, or your logistics company on Voya — let&apos;s talk.</p>
         <div className="flex gap-4 justify-center flex-wrap relative z-[2]">
           <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Contact us</Link>
-          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Sign up for Voya</Link>
+          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
         </div>
       </div>
 

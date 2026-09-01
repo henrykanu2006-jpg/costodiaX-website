@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Customs Clearing",
-    desc: "Fast, accurate customs documentation at Onne, Apapa, Tin Can, Calabar and Warri ports.",
+    desc: "Fast, accurate customs documentation through our operating base at Onne Port, Rivers State.",
     href: "/services",
     icon: <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />,
   },
@@ -40,7 +40,7 @@ const services = [
   },
   {
     title: "Haulage & Transport",
-    desc: "Cargo movement from port to warehouse across Nigeria. Own and third-party fleet, tracked live.",
+    desc: "Cargo movement from port to warehouse across Nigeria, coordinated through trusted third-party transport partners, tracked live.",
     href: "/services",
     icon: (
       <>
@@ -63,7 +63,7 @@ const services = [
   },
   {
     title: "Freight Forwarding",
-    desc: "International cargo coordination by sea and air from any origin to any Nigerian port.",
+    desc: "International cargo coordination by sea and air from any origin into Onne Port.",
     href: "/services",
     icon: (
       <>
@@ -139,8 +139,8 @@ export default function HomePage() {
         <div className="flex w-max animate-ticker">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex items-center gap-10 px-5 whitespace-nowrap text-white text-[13px] font-semibold tracking-wide">
-              <span>ONNE PORT</span><span>·</span><span>APAPA PORT</span><span>·</span><span>TIN CAN ISLAND</span><span>·</span>
-              <span>CALABAR PORT</span><span>·</span><span>WARRI PORT</span><span>·</span><span>BONDED TERMINAL — PORT HARCOURT</span><span>·</span>
+              <span>ONNE PORT</span><span>·</span><span>BONDED TERMINAL — PORT HARCOURT</span><span>·</span><span>CUSTOMS CLEARING</span><span>·</span>
+              <span>FREIGHT FORWARDING</span><span>·</span><span>HAULAGE &amp; TRANSPORT</span><span>·</span><span>VOYA PLATFORM</span><span>·</span>
             </div>
           ))}
         </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
           <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">What we do</div>
           <h2 className="font-serif text-[clamp(32px,4.5vw,54px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Complete logistics,<br />one group.</h2>
           <div className="w-10 h-0.5 bg-orange rounded-sm mb-9" />
-          <p className="text-[17px] text-text-2 leading-[1.78] max-w-[540px]">From your cargo arriving at any Nigerian port to reaching your warehouse — CostodiaX handles every step.</p>
+          <p className="text-[17px] text-text-2 leading-[1.78] max-w-[540px]">From your cargo arriving at Onne Port to reaching your warehouse — CostodiaX handles every step.</p>
         </Reveal>
         <div className="grid grid-cols-3 max-[900px]:grid-cols-2 max-[600px]:grid-cols-1 gap-px bg-border border border-border rounded-2xl overflow-hidden">
           {services.map((s) => (
@@ -173,9 +173,9 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url(/images/port-crane.jpg)" }} />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,#060D1A_0%,transparent_20%,transparent_65%,#060D1A_100%)]" />
         <Reveal className="!absolute bottom-[60px] left-[6%] right-[6%] flex justify-between items-end">
-          <div className="font-serif text-[clamp(24px,4vw,46px)] text-white font-bold leading-[1.15] tracking-[-0.02em]">Active at every major<br />port in <span className="text-gold">Nigeria.</span></div>
+          <div className="font-serif text-[clamp(24px,4vw,46px)] text-white font-bold leading-[1.15] tracking-[-0.02em]">Built on strong<br />Onne Port <span className="text-gold">operations.</span></div>
           <div className="px-5.5 py-3 bg-[rgba(5,10,18,0.85)] border border-gold text-gold rounded-md text-xs font-bold tracking-[0.08em] whitespace-nowrap backdrop-blur-sm max-[700px]:hidden">
-            Onne · Apapa · Tin Can · Calabar · Warri
+            Onne Port · Bonded Terminal, Port Harcourt
           </div>
         </Reveal>
       </div>
@@ -279,7 +279,7 @@ export default function HomePage() {
           <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Contact our team today or sign up for Voya and start running your operations properly.</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Contact us</Link>
-            <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Sign up for Voya</Link>
+            <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
           </div>
         </div>
       </div>
