@@ -12,7 +12,8 @@ const structuredData = {
   telephone: "+2348161172972",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "11 East West Road, Akpajo",
+    streetAddress: "11 Ahoada East-West Road (Arise and Shine Bus Stop)",
+    addressLocality: "Eleme",
     addressRegion: "Rivers State",
     addressCountry: "NG",
   },

@@ -36,7 +36,7 @@ const details = [
   },
   {
     label: "Head Office",
-    value: "11 East West Road, Akpajo\nRivers State, Nigeria",
+    value: "Arise and Shine Bus Stop, 11 Ahoada East-West Road\nEleme, Port Harcourt, Rivers State",
     icon: (
       <>
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
