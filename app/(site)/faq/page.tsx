@@ -66,9 +66,26 @@ const faqs = [
   },
 ];
 
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.a,
+    },
+  })),
+};
+
 export default function FAQPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
       <div className="pt-[140px] pb-16 px-[6%] bg-dark border-b border-border">
         <div className="max-w-[680px] mx-auto text-center">
           <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">FAQ</div>
