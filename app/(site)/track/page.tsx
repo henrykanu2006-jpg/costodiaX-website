@@ -130,7 +130,7 @@ export default async function TrackPage({
 
           {!number && (
             <p className="text-center text-sm text-text-3">
-              Your tracking number was provided by your CostodiaX clearing agent, or is on your Voya client portal.
+              Your tracking number was provided by your CostodiaX clearing agent, or is on your Waybrix client portal.
             </p>
           )}
         </div>

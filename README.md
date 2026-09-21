@@ -5,7 +5,7 @@ The marketing site for CostodiaX Group, built with Next.js, TypeScript and Tailw
 ## Pages
 - Home (`/`)
 - Services (`/services`)
-- Voya Platform (`/voya`)
+- Waybrix Platform (`/waybrix`)
 - About (`/about`)
 - Contact (`/contact`)
 - Privacy Policy (`/privacy`)

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WaybrixLogo from "@/components/WaybrixLogo";
 
 const socials = [
   {
@@ -40,7 +41,7 @@ export default function Footer() {
             COSTODIA<span className="text-orange">X</span> Group
           </div>
           <p className="text-[13.5px] text-text-3 leading-relaxed max-w-[240px] mb-4">
-            Nigeria&apos;s premier logistics conglomerate — customs clearing, bonded terminal in Port Harcourt, haulage and the Voya platform.
+            Nigeria&apos;s premier logistics conglomerate — customs clearing, bonded terminal in Port Harcourt, haulage and the Waybrix platform.
           </p>
           <div className="flex gap-3 mt-4">
             {socials.map((s) => (
@@ -75,11 +76,14 @@ export default function Footer() {
           <Link href="/faq" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">FAQ</Link>
         </div>
         <div>
-          <h4 className="text-[11px] font-bold text-white tracking-wider uppercase mb-5">Voya Platform</h4>
-          <Link href="/voya" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Overview</Link>
-          <Link href="/voya#features" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Features</Link>
-          <Link href="/voya#pricing" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Pricing</Link>
-          <Link href="/voya#signup" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Sign Up</Link>
+          <h4 className="flex items-center gap-2 text-[11px] font-bold text-white tracking-wider uppercase mb-5">
+            <WaybrixLogo size={16} />
+            Waybrix Platform
+          </h4>
+          <Link href="/waybrix" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Overview</Link>
+          <Link href="/waybrix#features" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Features</Link>
+          <Link href="/waybrix#pricing" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Pricing</Link>
+          <a href="https://app.costodiax.com" className="block text-[13.5px] text-text-3 no-underline mb-3 hover:text-orange">Sign Up</a>
         </div>
         <div>
           <h4 className="text-[11px] font-bold text-white tracking-wider uppercase mb-5">Contact</h4>
@@ -95,7 +99,7 @@ export default function Footer() {
           <Link href="/privacy" className="text-text-3 no-underline ml-3 hover:text-orange">Privacy Policy</Link>
         </div>
         <div className="text-[12.5px] text-text-3">
-          Voya Platform — <span className="text-orange font-semibold">Powered by CostodiaX</span>
+          Waybrix Platform — <span className="text-orange font-semibold">Powered by CostodiaX</span>
         </div>
       </div>
     </footer>

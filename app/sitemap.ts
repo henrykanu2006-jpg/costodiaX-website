@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/services/freight-forwarding`, lastModified: "2026-09-01", changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/services/haulage-transport`, lastModified: "2026-09-01", changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/services/port-terminal`, lastModified: "2026-09-01", changeFrequency: "monthly", priority: 0.85 },
-    { url: `${BASE_URL}/voya`, lastModified: "2026-09-01", changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/waybrix`, lastModified: "2026-09-21", changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/track`, lastModified: "2026-08-29", changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/quote`, lastModified: "2026-09-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/about`, lastModified: "2026-09-01", changeFrequency: "monthly", priority: 0.8 },

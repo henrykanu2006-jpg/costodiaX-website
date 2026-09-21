@@ -3,13 +3,14 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import WaybrixLogo from "@/components/WaybrixLogo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title: "CostodiaX Group — Nigeria's Premier Logistics Conglomerate",
     description:
-      "CostodiaX delivers customs clearing, bonded terminal storage in Port Harcourt, haulage and the Voya logistics platform across Nigeria.",
+      "CostodiaX delivers customs clearing, bonded terminal storage in Port Harcourt, haulage and the Waybrix logistics platform across Nigeria.",
     url: "/",
     type: "website",
   },
@@ -29,7 +30,7 @@ const services = [
   },
   {
     title: "Bonded Terminal",
-    desc: "Licensed bonded storage in Port Harcourt with automated daily billing through Voya.",
+    desc: "Licensed bonded storage in Port Harcourt with automated daily billing through Waybrix.",
     href: "/services/port-terminal",
     icon: (
       <>
@@ -74,9 +75,9 @@ const services = [
     ),
   },
   {
-    title: "Voya Platform",
+    title: "Waybrix Platform",
     desc: "Our SaaS platform for logistics companies. Jobs, invoices, terminal, transport — all in one place.",
-    href: "/voya",
+    href: "/waybrix",
     icon: (
       <>
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -90,7 +91,7 @@ const whyPoints = [
   "Technology-first — not adapted from generic software",
   "Built specifically for Nigerian customs and ports",
   "19-year-old founder, moving fast",
-  "Backed by the Voya platform for full operational control",
+  "Backed by the Waybrix platform for full operational control",
 ];
 
 const trustPoints = [
@@ -166,15 +167,15 @@ export default function HomePage() {
             Port to door. Sea to shelf.
           </div>
           <p className="text-[17px] text-[rgba(226,232,240,0.7)] leading-[1.8] mb-12 max-w-[540px] animate-fadeUp [animation-delay:0.5s] opacity-0">
-            CostodiaX Group delivers end-to-end logistics across Nigeria and West Africa — customs clearing, bonded terminal storage in Port Harcourt, haulage, and the Voya platform powering logistics companies continent-wide.
+            CostodiaX Group delivers end-to-end logistics across Nigeria and West Africa — customs clearing, bonded terminal storage in Port Harcourt, haulage, and the Waybrix platform powering logistics companies continent-wide.
           </p>
           <div className="flex gap-4 flex-wrap animate-fadeUp [animation-delay:0.7s] opacity-0">
             <Link href="/services" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 transition-all bg-orange text-white hover:bg-orange-2 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(234,88,12,0.35)]">
               Our Services
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </Link>
-            <Link href="/voya" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 transition-all bg-transparent text-white border border-white/20 hover:border-white hover:-translate-y-0.5">
-              Voya Platform
+            <Link href="/waybrix" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 transition-all bg-transparent text-white border border-white/20 hover:border-white hover:-translate-y-0.5">
+              Waybrix Platform
             </Link>
             <Link href="/quote" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline inline-flex items-center gap-2 transition-all bg-gold text-[#0A0A0A] hover:bg-[#D97706] hover:-translate-y-0.5">
               Get a quote
@@ -189,7 +190,7 @@ export default function HomePage() {
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex items-center gap-10 px-5 whitespace-nowrap text-white text-[13px] font-semibold tracking-wide">
               <span>ONNE PORT</span><span>·</span><span>BONDED TERMINAL — PORT HARCOURT</span><span>·</span><span>CUSTOMS CLEARING</span><span>·</span>
-              <span>FREIGHT FORWARDING</span><span>·</span><span>HAULAGE &amp; TRANSPORT</span><span>·</span><span>VOYA PLATFORM</span><span>·</span>
+              <span>FREIGHT FORWARDING</span><span>·</span><span>HAULAGE &amp; TRANSPORT</span><span>·</span><span>WAYBRIX PLATFORM</span><span>·</span>
             </div>
           ))}
         </div>
@@ -279,14 +280,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* VOYA TEASER */}
+      {/* WAYBRIX TEASER */}
       <section className="px-[6%] py-[100px] bg-dark border-t border-b border-border">
         <div className="grid grid-cols-2 max-[900px]:grid-cols-1 gap-20 items-center">
           <Reveal>
-            <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Voya Platform — Powered by CostodiaX</div>
+            <div className="flex items-center gap-2.5 mb-4">
+              <WaybrixLogo size={28} />
+              <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase">Waybrix Platform — Powered by CostodiaX</div>
+            </div>
             <h2 className="font-serif text-[clamp(32px,4.5vw,54px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">The software running<br />modern logistics<br />in <em className="not-italic text-orange">Africa.</em></h2>
             <div className="w-10 h-0.5 bg-orange rounded-sm mb-9" />
-            <p className="text-[17px] text-text-2 leading-[1.78] mb-8">Voya is our SaaS platform for clearing agents and logistics companies. Jobs, invoices, terminal, transport, client portal — starting at ₦45,000/month.</p>
+            <p className="text-[17px] text-text-2 leading-[1.78] mb-8">Waybrix is our SaaS platform for clearing agents and logistics companies. Jobs, invoices, terminal, transport, client portal — $22/month flat.</p>
             <div className="flex flex-col gap-3 mb-9">
               {[
                 "Real-time client cargo tracking portal",
@@ -301,17 +305,20 @@ export default function HomePage() {
               ))}
             </div>
             <div className="flex gap-3.5 flex-wrap">
-              <Link href="/voya" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-orange text-white hover:bg-orange-2">Explore Voya</Link>
-              <Link href="/voya#pricing" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20 hover:border-white">See pricing</Link>
+              <Link href="/waybrix" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-orange text-white hover:bg-orange-2">Explore Waybrix</Link>
+              <Link href="/waybrix#pricing" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20 hover:border-white">See pricing</Link>
             </div>
           </Reveal>
           <Reveal delay="d2">
             <div className="bg-card border border-white/10 rounded-2xl overflow-hidden shadow-[0_48px_96px_rgba(0,0,0,0.6)]">
-              <div className="bg-white/[0.03] border-b border-border px-4 py-3 flex items-center gap-1.5">
+              <div className="bg-white/[0.03] border-b border-border px-4 py-3 flex items-center gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#EF4444]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#10B981]" />
-                <div className="flex-1 text-center text-[9px] text-text-3">Voya — Powered by CostodiaX</div>
+                <div className="flex-1 flex items-center justify-center gap-1.5 text-[9px] text-text-3">
+                  <WaybrixLogo size={14} />
+                  Waybrix — Powered by CostodiaX
+                </div>
               </div>
               <div className="p-5">
                 <div className="text-sm font-semibold text-white mb-4">Good afternoon, Henry.</div>
@@ -370,10 +377,10 @@ export default function HomePage() {
       <div className="bg-[linear-gradient(135deg,#EA580C_0%,#C2410C_100%)] px-[6%] py-[90px] text-center relative overflow-hidden">
         <div className="relative z-[2]">
           <h2 className="font-serif text-[clamp(28px,4vw,52px)] text-white font-bold max-w-[680px] mx-auto mb-4 leading-[1.15] tracking-[-0.025em]">Ready to clear your cargo<br />or grow your logistics business?</h2>
-          <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Contact our team today or sign up for Voya and start running your operations properly.</p>
+          <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Contact our team today or sign up for Waybrix and start running your operations properly.</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Contact us</Link>
-            <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
+            <Link href="/waybrix#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
           </div>
         </div>
       </div>

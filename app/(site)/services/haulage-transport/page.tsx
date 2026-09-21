@@ -20,14 +20,14 @@ const whatWeHandle = [
   "20ft and 40ft container haulage",
   "Coordination with trusted third-party transport partners",
   "Port-to-warehouse movement across Nigeria",
-  "Trip tracking through the Voya platform",
+  "Trip tracking through the Waybrix platform",
   "Proof of delivery on completion",
 ];
 
 const process = [
   { n: "01", title: "Cargo is cleared", desc: "Once your cargo is released from customs (or your bonded terminal hold), it's ready to move." },
   { n: "02", title: "Transport is arranged", desc: "We coordinate with our trusted transport partners to book the right vehicle for your container size and destination." },
-  { n: "03", title: "Movement is tracked", desc: "Your trip is logged and tracked through Voya, so you know where your cargo is." },
+  { n: "03", title: "Movement is tracked", desc: "Your trip is logged and tracked through Waybrix, so you know where your cargo is." },
   { n: "04", title: "Delivery & proof", desc: "On arrival, we provide proof of delivery so you have confirmation your cargo reached its destination." },
 ];
 
@@ -67,7 +67,7 @@ export default function HaulageTransportPage() {
             <div className="bg-card border border-border rounded-2xl p-9">
               <h2 className="font-serif text-xl font-bold text-white mb-4">Honestly, how it works</h2>
               <p className="text-[14px] text-text-2 leading-relaxed mb-5">
-                We currently coordinate haulage entirely through trusted third-party transport partners rather than an owned truck fleet — we&apos;re not going to claim otherwise. What that means for you: real vehicles, vetted by us, tracked through Voya.
+                We currently coordinate haulage entirely through trusted third-party transport partners rather than an owned truck fleet — we&apos;re not going to claim otherwise. What that means for you: real vehicles, vetted by us, tracked through Waybrix.
               </p>
               <p className="text-[14px] text-text-2 leading-relaxed">
                 We&apos;re working toward operating our own fleet in the future as we grow.

@@ -2,17 +2,18 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import WaybrixLogo from "@/components/WaybrixLogo";
 
 export const metadata: Metadata = {
-  title: "Voya Platform",
+  title: "Waybrix Platform",
   description:
-    "Voya is a complete SaaS platform for Nigerian logistics companies. Jobs, invoices, terminal, transport, client portal — all in one place.",
-  alternates: { canonical: "/voya" },
+    "Waybrix is the operating system Nigerian logistics companies run on. Jobs, customs invoicing, terminal, transport and client portal — live now.",
+  alternates: { canonical: "/waybrix" },
   openGraph: {
-    title: "Voya Platform — Powered by CostodiaX",
+    title: "Waybrix Platform — Powered by CostodiaX",
     description:
-      "The operating system for African logistics. Jobs, invoices, terminal, transport and client portal — starting at ₦45,000/month.",
-    url: "/voya",
+      "The operating system for African logistics. Jobs, invoices, terminal, transport and client portal — live now, starting at $22/month.",
+    url: "/waybrix",
     type: "website",
   },
 };
@@ -33,57 +34,84 @@ const solutions = [
   "Staff see exactly their assigned jobs — no confusion",
 ];
 
+const jobStages = [
+  { label: "Documents received", color: "#F59E0B" },
+  { label: "PAAR filed", color: "#F59E0B" },
+  { label: "Vessel arrived", color: "#F59E0B" },
+  { label: "DO collected", color: "#EA580C" },
+  { label: "Duties paid", color: "#EA580C" },
+  { label: "Under examination", color: "#EA580C" },
+  { label: "Released", color: "#10B981" },
+  { label: "Delivered", color: "#10B981" },
+];
+
 const features = [
-  { n: "01", title: "Jobs & 8-stage tracking", desc: "Track every job through all 8 stages of the Nigerian clearance process — documents received, PAAR filed, vessel arrived, DO collected, duties paid, under examination, released and delivered." },
+  { n: "01", title: "Jobs & 8-stage tracking", desc: "Every job moves through all 8 stages of the Nigerian clearance process automatically — nothing tracked by memory or WhatsApp." },
   { n: "02", title: "Nigerian customs invoicing", desc: "Invoices with VAT (7.5%), CISS (1% of CIF), ETLS (0.5% of CIF) and duty advance — all calculated automatically at your CBN rate with PDF download." },
   { n: "03", title: "Bonded terminal management", desc: "Log cargo, set daily rates, track storage charges from day one. Own terminal and third-party terminals tracked separately. Weekly reports generated automatically." },
   { n: "04", title: "Client cargo portal", desc: "Your clients log in and see their shipments, documents and invoices in real time. Personalised greeting. No more “where is my cargo?” calls to your office." },
   { n: "05", title: "Staff role management", desc: "Port runners see only their assigned jobs. Finance officers see only invoices. Drivers see their trips. Each role gets exactly the access they need." },
 ];
 
-const plans = [
-  {
-    name: "Starter",
-    price: "₦45,000",
-    color: "#3B82F6",
-    features: ["Up to 2 staff", "15 jobs per month", "Jobs & clients module", "Client portal", "Invoice generation", "Document storage", "Email support"],
-    popular: false,
-  },
-  {
-    name: "Growth",
-    price: "₦95,000",
-    color: "#EA580C",
-    features: ["Up to 8 staff", "50 jobs per month", "Everything in Starter", "Bonded terminal module", "Transport & fleet module", "Full PDF invoicing", "Reports & analytics", "Priority support"],
-    popular: true,
-  },
-  {
-    name: "Enterprise",
-    price: "₦180,000",
-    color: "#F59E0B",
-    features: ["Unlimited staff", "Unlimited jobs", "Everything in Growth", "Custom job number prefix", "Advanced analytics", "Dedicated account manager", "Phone support"],
-    popular: false,
-  },
+const proFeatures = [
+  "Full access for your whole team",
+  "Jobs, terminal, and transport tracking",
+  "Invoicing and the client portal",
+  "Nigeria Customs duty calculator",
+  "Cancel any time, no lock-in",
 ];
 
-export default function VoyaPage() {
+export default function WaybrixPage() {
   return (
     <>
       <div className="min-h-[75vh] relative flex items-end overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url(/images/voya-hero.jpg)" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url(/images/waybrix-hero.jpg)" }} />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,10,18,0.6)_0%,rgba(5,10,18,0.98)_100%)]" />
         <div className="relative z-[2] px-[6%] pb-20">
           <Reveal>
-            <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Voya Platform — Powered by CostodiaX</div>
+            <div className="flex items-center gap-3 mb-6">
+              <WaybrixLogo size={36} />
+              <div className="flex items-center gap-3">
+                <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase">Waybrix Platform — Powered by CostodiaX</div>
+                <div className="flex items-center gap-1.5 text-[10px] font-bold text-[#10B981] tracking-[0.1em] uppercase">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulseSoft" />
+                  Live now
+                </div>
+              </div>
+            </div>
             <h1 className="font-serif text-[clamp(40px,6vw,80px)] font-bold text-white tracking-[-0.03em] leading-[1.06] max-w-[780px] mb-5">The operating system<br />for African logistics.</h1>
-            <p className="text-[17px] text-text-2 leading-[1.78] max-w-[600px] mb-10">Voya is a SaaS platform being built specifically for clearing agents, freight forwarders and logistics companies in Nigeria — everything you need to run a modern, professional operation, in one place.</p>
+            <p className="text-[17px] text-text-2 leading-[1.78] max-w-[600px] mb-10">Waybrix is the platform clearing agents, freight forwarders and logistics companies in Nigeria run their operation on — jobs, customs duty, documentation, terminal, transport and invoicing, in one place.</p>
             <div className="flex gap-3.5 flex-wrap">
-              <a href="#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 bg-orange text-white hover:bg-orange-2">
-                Request early access
+              <a href="https://app.costodiax.com" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline inline-flex items-center gap-2 bg-orange text-white hover:bg-orange-2">
+                Try Waybrix free
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </a>
               <a href="#pricing" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20">See pricing</a>
             </div>
           </Reveal>
+        </div>
+      </div>
+
+      <div className="bg-black py-2.5 overflow-hidden border-t border-b border-border">
+        <div className="flex w-max animate-ticker">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="flex items-center whitespace-nowrap font-mono text-[10.5px] tracking-wide">
+              {[
+                { id: "CTX-2026-0142", route: "LOS→ABJ", status: "CLEARED", color: "text-[#10B981]" },
+                { id: "CTX-2026-0139", route: "PHC→LOS", status: "IN TRANSIT", color: "text-[#3B82F6]" },
+                { id: "CTX-2026-0137", route: "LOS→KAN", status: "CUSTOMS HOLD", color: "text-gold" },
+                { id: "CTX-2026-0131", route: "LOS→IBA", status: "DELIVERED", color: "text-[#10B981]" },
+                { id: "CTX-2026-0128", route: "KAN→LOS", status: "DUTY VERIFIED", color: "text-[#10B981]" },
+                { id: "CTX-2026-0119", route: "TIN→LOS", status: "FREE DAYS: 2", color: "text-gold" },
+              ].map((row) => (
+                <span key={row.id} className="flex items-center gap-2.5 px-5 border-r border-white/10">
+                  <span className="text-text-3">{row.id}</span>
+                  <span className="text-text-2">{row.route}</span>
+                  <span className={`font-semibold ${row.color}`}>● {row.status}</span>
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -102,7 +130,7 @@ export default function VoyaPage() {
             </div>
           </Reveal>
           <Reveal delay="d2">
-            <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">The Voya Solution</div>
+            <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">The Waybrix Solution</div>
             <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-7">One platform. Everything in order.</h2>
             <div className="flex flex-col gap-3">
               {solutions.map((s) => (
@@ -126,20 +154,36 @@ export default function VoyaPage() {
             {features.map((f) => (
               <div key={f.n} className="flex gap-5 items-start py-6 border-b border-border last:border-none">
                 <div className="font-serif text-[13px] text-orange font-bold shrink-0 min-w-[24px] pt-0.5">{f.n}</div>
-                <div>
+                <div className="flex-1">
                   <div className="text-[15px] font-semibold text-white mb-1.5">{f.title}</div>
                   <div className="text-[13.5px] text-text-3 leading-[1.68]">{f.desc}</div>
+                  {f.n === "01" && (
+                    <div className="mt-4 flex flex-col">
+                      {jobStages.map((s, i) => (
+                        <div key={s.label} className="flex items-center gap-3 relative">
+                          {i < jobStages.length - 1 && (
+                            <div className="absolute left-[3px] top-[13px] w-px h-[20px]" style={{ background: s.color, opacity: 0.35 }} />
+                          )}
+                          <div className="w-[7px] h-[7px] rounded-full shrink-0 z-[1]" style={{ background: s.color }} />
+                          <div className="text-[11.5px] text-text-2 py-[5px]">{s.label}</div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
           </Reveal>
           <Reveal delay="d2" className="max-[960px]:!static sticky top-[100px]">
             <div className="bg-card border border-white/10 rounded-2xl overflow-hidden shadow-[0_48px_96px_rgba(0,0,0,0.6)]">
-              <div className="bg-white/[0.03] border-b border-border px-4 py-3 flex items-center gap-1.5">
+              <div className="bg-white/[0.03] border-b border-border px-4 py-3 flex items-center gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#EF4444]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#10B981]" />
-                <div className="flex-1 text-center text-[9px] text-text-3">Voya — Powered by CostodiaX</div>
+                <div className="flex-1 flex items-center justify-center gap-1.5 text-[9px] text-text-3">
+                  <WaybrixLogo size={14} />
+                  Waybrix — Powered by CostodiaX
+                </div>
               </div>
               <div className="p-5">
                 <div className="text-sm font-semibold text-white mb-4">Good afternoon, Henry.</div>
@@ -182,50 +226,50 @@ export default function VoyaPage() {
         <Reveal className="!block text-center mb-14">
           <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Pricing</div>
           <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Honest pricing.<br />No hidden fees.</h2>
-          <p className="text-[17px] text-text-2 leading-[1.78] max-w-[480px] mx-auto">Planned launch pricing — all plans include core modules. Get in touch to be among the first onboarded.</p>
+          <p className="text-[17px] text-text-2 leading-[1.78] max-w-[480px] mx-auto">One flat plan. Everything included. No tiers to figure out.</p>
         </Reveal>
-        <div className="grid grid-cols-3 max-[960px]:grid-cols-1 gap-4 max-w-[960px] mx-auto">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className="bg-card rounded-xl p-9 relative flex flex-col"
-              style={{ border: plan.popular ? `2px solid ${plan.color}` : "1px solid rgba(255,255,255,0.1)" }}
-            >
-              {plan.popular && (
-                <div className="absolute -top-px left-1/2 -translate-x-1/2 bg-orange text-white text-[10px] font-bold px-4 py-0.5 rounded-b-lg tracking-wider uppercase">Most Popular</div>
-              )}
-              <div className={`text-xs font-bold tracking-[0.12em] uppercase mb-3.5 ${plan.popular ? "mt-3" : ""}`} style={{ color: plan.color }}>{plan.name}</div>
-              <div className="font-serif text-4xl text-white leading-none mb-1">{plan.price}</div>
-              <div className="text-xs text-text-3 mb-6">per month</div>
-              <div className="border-t border-border pt-5 flex-1">
-                {plan.features.map((f) => (
-                  <div key={f} className="flex gap-2.5 mb-2.5 text-[13.5px] text-text-2">
-                    <span className="font-bold" style={{ color: plan.color }}>✓</span>{f}
-                  </div>
-                ))}
-              </div>
-              <a
-                href="#signup"
-                className="w-full justify-center mt-7 py-3 rounded-lg text-sm font-semibold no-underline flex items-center"
-                style={
-                  plan.popular
-                    ? { background: plan.color, color: "white" }
-                    : { background: "transparent", color: plan.color, border: `1px solid ${plan.color}` }
-                }
-              >
-                Talk to sales
-              </a>
+        <div className="max-w-[420px] mx-auto">
+          <div
+            className="bg-card rounded-xl p-9 relative flex flex-col"
+            style={{ border: "2px solid #6366F1" }}
+          >
+            <div className="flex items-center gap-2.5 mb-3.5">
+              <WaybrixLogo size={28} />
+              <div className="text-xs font-bold tracking-[0.12em] uppercase" style={{ color: "#6366F1" }}>Waybrix Pro</div>
             </div>
-          ))}
+            <div className="font-serif text-4xl text-white leading-none mb-1">$22</div>
+            <div className="text-xs text-text-3 mb-6">per month, flat</div>
+            <div className="border-t border-border pt-5 flex-1">
+              {proFeatures.map((f) => (
+                <div key={f} className="flex gap-2.5 mb-2.5 text-[13.5px] text-text-2">
+                  <span className="font-bold" style={{ color: "#6366F1" }}>✓</span>{f}
+                </div>
+              ))}
+            </div>
+            <a
+              href="https://app.costodiax.com"
+              className="w-full justify-center mt-7 py-3 rounded-lg text-sm font-semibold no-underline flex items-center"
+              style={{ background: "linear-gradient(135deg,#6366F1,#4F46E5)", color: "white" }}
+            >
+              Get started
+            </a>
+          </div>
         </div>
       </section>
 
       <section className="px-[6%] py-[100px]" id="signup">
         <div className="max-w-[640px] mx-auto">
-          <Reveal className="!block text-center mb-12">
+          <Reveal className="!block text-center mb-10">
             <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">Get started</div>
-            <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Get in touch about Voya.</h2>
-            <p className="text-[17px] text-text-2 leading-[1.78]">Tell us about your company and our team will reach out to discuss getting you onboarded.</p>
+            <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-4">Waybrix is live. Start today.</h2>
+            <p className="text-[17px] text-text-2 leading-[1.78] mb-8">Create your company account and start running jobs in minutes — no sales call required.</p>
+            <a href="https://app.costodiax.com" className="px-7 py-4 rounded-lg text-[15px] font-semibold no-underline inline-flex items-center gap-2 bg-orange text-white hover:bg-orange-2">
+              Create your account
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+          </Reveal>
+          <Reveal className="!block text-center mb-8">
+            <div className="text-[13px] text-text-3">Prefer to talk it through first? Tell us about your company below.</div>
           </Reveal>
           <Reveal delay="d1">
             <form action="https://formspree.io/f/xnjeodoj" method="POST" className="bg-card border border-border rounded-2xl p-11">
@@ -253,9 +297,7 @@ export default function VoyaPage() {
                 <label className="block text-xs font-medium text-text-2 mb-2">Which plan interests you?</label>
                 <select name="plan" className="w-full px-4 py-3.5 bg-black/40 border border-border rounded-lg text-text text-sm outline-none focus:border-orange">
                   <option value="">Select a plan</option>
-                  <option>Starter — ₦45,000/month</option>
-                  <option>Growth — ₦95,000/month</option>
-                  <option>Enterprise — ₦180,000/month</option>
+                  <option>Waybrix Pro — $22/month</option>
                   <option>Not sure — I want to discuss</option>
                 </select>
               </div>
@@ -263,13 +305,13 @@ export default function VoyaPage() {
                 <label className="block text-xs font-medium text-text-2 mb-2">Tell us about your business</label>
                 <textarea name="message" placeholder="How many jobs per month? Do you have a bonded terminal? How many staff?" className="w-full min-h-[110px] px-4 py-3.5 bg-black/40 border border-border rounded-lg text-text text-sm outline-none focus:border-orange resize-y" />
               </div>
-              <input type="hidden" name="_subject" value="New Voya Platform Request" />
-              <input type="hidden" name="_next" value="https://www.costodiax.com/voya" />
-              <button type="submit" className="w-full justify-center flex items-center gap-2 py-4 rounded-lg text-[15px] font-semibold bg-orange text-white hover:bg-orange-2 transition-colors">
-                Request access to Voya
+              <input type="hidden" name="_subject" value="New Waybrix Platform Request" />
+              <input type="hidden" name="_next" value="https://www.costodiax.com/waybrix" />
+              <button type="submit" className="w-full justify-center flex items-center gap-2 py-4 rounded-lg text-[15px] font-semibold bg-transparent text-white border border-white/20 hover:border-white/40 transition-colors">
+                Talk to our team
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </button>
-              <p className="text-center text-[12.5px] text-text-3 mt-4">Our team will reach out to discuss next steps.</p>
+              <p className="text-center text-[12.5px] text-text-3 mt-4">Our team will reach out to discuss your setup.</p>
             </form>
           </Reveal>
         </div>

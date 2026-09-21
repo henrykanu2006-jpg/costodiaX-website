@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for CostodiaX Group and the Voya Platform.",
+  description: "Privacy Policy for CostodiaX Group and the Waybrix Platform.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -32,9 +32,9 @@ export default function PrivacyPage() {
         <p className="text-[15px] text-text-2 leading-[1.8] mb-4">We use the information you provide solely to:</p>
         <ul className="pl-5 mb-4 list-disc">
           {[
-            "Respond to your enquiry about our logistics services or the Voya platform",
+            "Respond to your enquiry about our logistics services or the Waybrix platform",
             "Provide you with a quote or further information you have requested",
-            "Onboard you onto the Voya platform if you have signed up",
+            "Onboard you onto the Waybrix platform if you have signed up",
             "Contact you regarding your existing service with CostodiaX Group",
           ].map((i) => (
             <li key={i} className="text-[15px] text-text-2 leading-[1.8] mb-2">{i}</li>

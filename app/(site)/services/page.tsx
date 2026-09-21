@@ -36,7 +36,7 @@ const moreServices = [
   {
     title: "Haulage & Transport",
     desc: "Cargo movement from port gate to warehouse across Nigeria, coordinated through trusted third-party transport partners. Every trip tracked live.",
-    points: ["20ft & 40ft containers", "Real-time tracking via Voya", "Proof of delivery"],
+    points: ["20ft & 40ft containers", "Real-time tracking via Waybrix", "Proof of delivery"],
     href: "/services/haulage-transport",
     icon: (
       <>
@@ -130,7 +130,7 @@ export default function ServicesPage() {
         <Reveal className="!absolute top-1/2 left-[6%] -translate-y-1/2 max-w-[580px]">
           <div className="text-[11px] font-bold text-orange tracking-[0.16em] uppercase mb-4">02 — Bonded Terminal</div>
           <h2 className="font-serif text-[clamp(30px,4vw,52px)] font-bold text-white tracking-[-0.025em] leading-[1.1] mb-5">Secure bonded storage<br />in <span className="text-gold">Port Harcourt.</span></h2>
-          <p className="text-base text-[rgba(226,232,240,0.8)] leading-[1.75] mb-8">Our licensed bonded terminal in Port Harcourt provides secure storage for imported goods awaiting customs clearance. Daily storage charges tracked automatically through Voya — full visibility, no surprises.</p>
+          <p className="text-base text-[rgba(226,232,240,0.8)] leading-[1.75] mb-8">Our licensed bonded terminal in Port Harcourt provides secure storage for imported goods awaiting customs clearance. Daily storage charges tracked automatically through Waybrix — full visibility, no surprises.</p>
           <div className="flex gap-3.5 flex-wrap">
             <Link href="/services/port-terminal" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-gold text-[#0A0A0A]">Learn more</Link>
             <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-transparent text-white border border-white/20">Enquire about storage</Link>
@@ -170,7 +170,7 @@ export default function ServicesPage() {
         <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Contact our operations team. We will respond within 24 hours with a clear quote.</p>
         <div className="flex gap-4 justify-center flex-wrap relative z-[2]">
           <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Contact our team</Link>
-          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
+          <Link href="/waybrix#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
         </div>
       </div>
 

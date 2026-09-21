@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const options = [
   { text: "I want to clear my cargo at the port", label: "🚢 I want to clear my cargo" },
   { text: "I need bonded terminal storage in Port Harcourt", label: "📦 I need terminal storage" },
-  { text: "I want to sign up for the Voya platform", label: "💻 I want to sign up for Voya" },
+  { text: "I want to sign up for the Waybrix platform", label: "💻 I want to sign up for Waybrix" },
   { text: "I have a general enquiry for CostodiaX", label: "💬 General enquiry" },
 ];
 

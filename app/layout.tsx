@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     template: "%s — CostodiaX Group",
   },
   description:
-    "CostodiaX Group — customs clearing, bonded terminal storage in Port Harcourt, haulage and the Voya platform across Nigeria and West Africa.",
+    "CostodiaX Group — customs clearing, bonded terminal storage in Port Harcourt, haulage and the Waybrix platform across Nigeria and West Africa.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 const terminalFeatures = [
   "Licensed bonded storage — a real, licensed facility, not informal arrangement",
-  "Daily storage charges tracked automatically through Voya",
+  "Daily storage charges tracked automatically through Waybrix",
   "Secure holding for cargo awaiting customs clearance",
   "Weekly reporting on stored cargo",
 ];
@@ -72,7 +72,7 @@ export default function PortTerminalPage() {
             One base, one bonded terminal — full visibility on both.
           </h2>
           <p className="text-[15px] text-text-2 leading-relaxed">
-            Having our clearing operations and bonded storage in the same area means less coordination overhead between separate parties. And because storage is billed and tracked through Voya, you can see exactly what your cargo is costing you in storage, day by day — not a surprise bill at the end.
+            Having our clearing operations and bonded storage in the same area means less coordination overhead between separate parties. And because storage is billed and tracked through Waybrix, you can see exactly what your cargo is costing you in storage, day by day — not a surprise bill at the end.
           </p>
         </Reveal>
       </section>

@@ -20,17 +20,17 @@ export const metadata: Metadata = {
 const timeline = [
   { date: "April 2026", title: "CostodiaX Founded", desc: "Henry Dimkpa Kanu establishes CostodiaX Group in Port Harcourt.", color: "bg-orange", text: "text-orange" },
   { date: "June 2026", title: "Officially Registered", desc: "CostodiaX Group receives official business registration.", color: "bg-gold", text: "text-gold" },
-  { date: "June 2026", title: "Voya Platform Launched", desc: "Proprietary SaaS platform for Nigerian logistics companies goes live.", color: "bg-[#10B981]", text: "text-[#10B981]" },
+  { date: "June 2026", title: "Waybrix Platform Launched", desc: "Proprietary SaaS platform for Nigerian logistics companies goes live.", color: "bg-[#10B981]", text: "text-[#10B981]" },
   { date: "2026 →", title: "Expanding Across Nigeria", desc: "Onboarding clearing agents and logistics companies nationwide.", color: "bg-[#3B82F6]", text: "text-[#3B82F6]" },
 ];
 
 const values = [
   { n: "01", title: "Transparency", desc: "Every fee documented. Every charge explained. Clients see exactly what they are paying for — before they pay it." },
   { n: "02", title: "Technology First", desc: "We do not adapt old processes to software. We rebuild processes from the ground up with technology at the centre." },
-  { n: "03", title: "Nigerian by Design", desc: "Voya is not a foreign platform adapted for Nigeria. It is built from scratch for Nigerian customs procedures, Nigerian ports, and Nigerian businesses." },
+  { n: "03", title: "Nigerian by Design", desc: "Waybrix is not a foreign platform adapted for Nigeria. It is built from scratch for Nigerian customs procedures, Nigerian ports, and Nigerian businesses." },
   { n: "04", title: "Speed", desc: "Time is money in logistics. We move fast, respond fast, and build systems that help our clients move fast too." },
   { n: "05", title: "Reliability", desc: "When cargo is at the port, there is no room for mistakes. Our clients trust us because we deliver — consistently." },
-  { n: "06", title: "Growth", desc: "We are building something that lasts. Every client we serve, every company we onboard onto Voya, is a step toward making African trade more efficient." },
+  { n: "06", title: "Growth", desc: "We are building something that lasts. Every client we serve, every company we onboard onto Waybrix, is a step toward making African trade more efficient." },
 ];
 
 export default function AboutPage() {
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <div className="w-10 h-0.5 bg-orange rounded-sm mb-9" />
             <p className="text-base text-text-2 leading-[1.85] mb-5">Henry Dimkpa Kanu founded CostodiaX Group in April 2026 at the age of 19, right in the heart of Port Harcourt — Nigeria&apos;s oil and logistics capital.</p>
             <p className="text-base text-text-2 leading-[1.85] mb-5">Growing up around the logistics industry, Henry saw firsthand how clearing agents and freight companies operated — documents passed from hand to hand, clients calling every hour for updates, invoices typed manually in spreadsheets, and entire operations running on WhatsApp groups. He knew there had to be a better way.</p>
-            <p className="text-base text-text-2 leading-[1.85]">In June 2026, CostodiaX Group was officially registered. Within months, the company was not only providing world-class clearing, terminal and haulage services — it had also built Voya, a complete SaaS platform designed specifically for Nigerian logistics companies.</p>
+            <p className="text-base text-text-2 leading-[1.85]">In June 2026, CostodiaX Group was officially registered. Within months, the company was not only providing world-class clearing, terminal and haulage services — it had also built Waybrix, a complete SaaS platform designed specifically for Nigerian logistics companies.</p>
           </Reveal>
           <Reveal delay="d2">
             <div className="bg-dark border border-border rounded-2xl p-10">
@@ -99,7 +99,7 @@ export default function AboutPage() {
               <div className="absolute top-0 left-0 right-0 h-[3px] bg-[linear-gradient(90deg,#EA580C,#F59E0B)]" />
               <div className="text-[11px] font-bold text-gold tracking-[0.15em] uppercase mb-5">Our Vision</div>
               <p className="font-serif text-xl text-white leading-[1.5] font-semibold mb-5">&quot;To become the backbone of logistics technology across West Africa — the platform every serious logistics company runs on.&quot;</p>
-              <p className="text-sm text-text-3 leading-[1.7]">CostodiaX is not just a clearing company. It is the beginning of an ecosystem — where Voya powers logistics operations from Lagos to Accra to Abidjan, and where African trade moves faster because of what we built in Port Harcourt.</p>
+              <p className="text-sm text-text-3 leading-[1.7]">CostodiaX is not just a clearing company. It is the beginning of an ecosystem — where Waybrix powers logistics operations from Lagos to Accra to Abidjan, and where African trade moves faster because of what we built in Port Harcourt.</p>
             </div>
           </Reveal>
         </div>
@@ -135,10 +135,10 @@ export default function AboutPage() {
 
       <div className="bg-[linear-gradient(135deg,#EA580C_0%,#C2410C_100%)] px-[6%] py-20 text-center relative overflow-hidden">
         <h2 className="font-serif text-[clamp(28px,4vw,50px)] text-white font-bold max-w-[680px] mx-auto mb-4 leading-[1.15] tracking-[-0.025em]">Ready to work with us?</h2>
-        <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Whether you need cargo cleared, goods stored, or your logistics company on Voya — let&apos;s talk.</p>
+        <p className="text-[17px] text-white/80 max-w-[480px] mx-auto mb-10 leading-[1.7]">Whether you need cargo cleared, goods stored, or your logistics company on Waybrix — let&apos;s talk.</p>
         <div className="flex gap-4 justify-center flex-wrap relative z-[2]">
           <Link href="/contact" className="px-6.5 py-3.5 rounded-lg text-sm font-bold no-underline bg-white text-orange">Contact us</Link>
-          <Link href="/voya#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
+          <Link href="/waybrix#signup" className="px-6.5 py-3.5 rounded-lg text-sm font-semibold no-underline bg-white/15 text-white border border-white/30">Request early access</Link>
         </div>
       </div>
 

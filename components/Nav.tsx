@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/voya", label: "Voya Platform" },
+  { href: "/waybrix", label: "Waybrix Platform" },
   { href: "/track", label: "Track Shipment" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -63,12 +63,12 @@ export default function Nav() {
             </li>
           ))}
           <li>
-            <Link
-              href="/voya#signup"
+            <a
+              href="https://app.costodiax.com"
               className="px-6 py-2.5 bg-orange text-white! rounded-md font-semibold! transition-all! hover:bg-orange-2! hover:-translate-y-px hover:shadow-[0_8px_20px_rgba(234,88,12,0.3)]!"
             >
               Get Started
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -85,13 +85,13 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="/voya#signup"
+          <a
+            href="https://app.costodiax.com"
             onClick={() => setOpen(false)}
             className="text-white no-underline text-[15px] font-semibold bg-orange px-5 py-3.5 rounded-md mt-2 text-center"
           >
             Get Started
-          </Link>
+          </a>
         </div>
       )}
     </>
